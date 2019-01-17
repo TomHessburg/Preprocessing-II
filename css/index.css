@@ -177,6 +177,15 @@ img {
   max-width: 1400px;
   margin: 0 auto;
   border-bottom: 2px dashed #C0C0C0;
+  animation: fade-in 2s linear infinite alternate;
+}
+@keyframes fade-in {
+  0% {
+    background-color: #f2ffff;
+  }
+  100% {
+    background-color: #99dad9;
+  }
 }
 @media (max-width: 500px) {
   .navigation-bar {
@@ -318,6 +327,15 @@ img {
   text-align: center;
   font-size: 20px;
   color: white;
+  animation: fade-in 0.8s linear infinite alternate;
+}
+@keyframes fade-in {
+  0% {
+    background-color: #489d9b;
+  }
+  100% {
+    background-color: #99dad9;
+  }
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {

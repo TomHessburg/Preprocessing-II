@@ -10,6 +10,13 @@
     margin: 0 auto;
     border-bottom: 2px dashed @navigation-border;
 
+    .keyframes(fade-in;{
+        0% { background-color: rgb(242, 255, 255); }
+        100% { background-color: rgb(153, 218, 217); }
+        });
+    
+      .animation(fade-in 2.0s linear infinite alternate);
+
     @media @mobile {
         flex-direction: column;
         width: 100%;

@@ -9,3 +9,15 @@
     font-size: 20px;
     color: @fontcolor;
 }
+
+
+
+.keyframes(@name; @arguments) {
+    @keyframes @name { 
+        @arguments(); 
+    }
+}
+
+.animation(@arguments) {
+	animation: @arguments;
+}

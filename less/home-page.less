@@ -97,6 +97,13 @@
       .btn {
         .m-button-mixing(rgb(72, 157, 155), 90%, 15px, white);
 
+        .keyframes(fade-in;{
+          0% { background-color: rgb(72, 157, 155); }
+          100% { background-color: rgb(153, 218, 217); }
+          });
+      
+        .animation(fade-in 0.8s linear infinite alternate);
+
         @media @mobile {
           .m-button-mixing(rgb(115, 213, 211), 100%, 15px, white);
         }
