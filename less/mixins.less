@@ -1,1 +1,23 @@
 // Mixins in here
+
+.m-button-mixing(@color, @width, @height, @fontcolor){
+    background-color: @color;
+    width: @width;
+    padding: @height 0;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 20px;
+    color: @fontcolor;
+}
+
+
+
+.keyframes(@name; @arguments) {
+    @keyframes @name { 
+        @arguments(); 
+    }
+}
+
+.animation(@arguments) {
+	animation: @arguments;
+}
